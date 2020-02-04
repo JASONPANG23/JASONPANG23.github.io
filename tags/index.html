@@ -232,10 +232,11 @@
 <section class="comments" id="comments">
     <div id="gitment_thread"></div>
     <link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
+   <script src="http://cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.js"></script>
    <script src="https://www.wenjunjiang.win/js/gitment.js"></script>
     <script>
         var gitment = new Gitment({
-            id: "tags",
+            id: md5(window.location.pathname),
             owner: 'JASONPANG23',
             repo: 'jasonpang23.github.io',
             oauth: {
